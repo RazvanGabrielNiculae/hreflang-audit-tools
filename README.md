@@ -28,3 +28,16 @@ The Python utilities use only the standard library. Run the relevant tool agains
 Methodology and long-form context: https://niculae.info/blog/multilingual-hreflang-geo/
 
 Publisher: https://niculae.info/
+
+### Run it
+
+```bash
+python3 tools/audit_hreflang.py examples/en.html
+python3 -m unittest discover -s tests -v
+```
+
+Negative fixtures cover missing language identity, multiple canonicals, and missing hreflang alternates.
+
+## Related projects
+
+Use [AI Search Frameworks](https://github.com/RazvanGabrielNiculae/ai-search-frameworks) for the broader multilingual AI-search model. This repository stays focused on executable canonical/language/hreflang checks.
